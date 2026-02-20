@@ -77,76 +77,52 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
-      <div className="max-w-5xl w-full">
-        {/* Hero Section */}
-        <div className="text-center mb-16 space-y-6">
-          {/* Logo/Icon */}
-          <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-yellow-300 to-amber-400 rounded-3xl shadow-2xl mb-4 transform hover:scale-105 transition-transform">
-            <span className="text-5xl">⚡</span>
-          </div>
-          
-          <h1 className="text-8xl font-black bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 bg-clip-text text-transparent drop-shadow-lg tracking-tight">
+    <div className="min-h-screen">
+      <div className="container mx-auto px-4 py-12 max-w-6xl">
+        <div className="text-center mb-16 space-y-4">
+          <h1 className="text-7xl font-black bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 bg-clip-text text-transparent drop-shadow-lg tracking-tight mb-2">
             Blink
           </h1>
+          <p className="text-xl text-gray-700 font-semibold">Capture thoughts in under 3 seconds</p>
           
-          <p className="text-xl text-gray-700 font-medium max-w-md mx-auto">
-            Capture thoughts in under 3 seconds
-          </p>
-
-          {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+          <div className="flex gap-4 justify-center pt-6">
             <button
               onClick={() => setCaptureOpen(true)}
-              className="group relative px-10 py-5 bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-500 hover:to-amber-600 rounded-3xl font-bold transition-all shadow-2xl text-gray-900 text-lg transform hover:scale-105 hover:shadow-yellow-300/50"
+              className="px-8 py-4 bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-500 hover:to-amber-600 rounded-2xl font-bold transition-all shadow-xl text-gray-900 text-base transform hover:scale-105 hover:-translate-y-0.5"
             >
-              <span className="flex items-center gap-3">
-                <span className="text-2xl">✨</span>
-                <span>New Note</span>
-              </span>
-              <span className="block text-xs opacity-75 mt-1">Ctrl+Shift+B</span>
+              ✨ New Note (Ctrl+Shift+B)
             </button>
-            
             <button
               onClick={() => setHistoryOpen(true)}
-              className="px-10 py-5 bg-white hover:bg-yellow-50 rounded-3xl font-bold transition-all shadow-xl text-gray-900 border-3 border-yellow-300 text-lg transform hover:scale-105"
+              className="px-8 py-4 bg-white hover:bg-yellow-50 rounded-2xl font-bold transition-all shadow-xl text-gray-900 border-3 border-yellow-300 text-base transform hover:scale-105 hover:-translate-y-0.5"
             >
-              <span className="flex items-center gap-3">
-                <span className="text-2xl">📚</span>
-                <span>History</span>
-              </span>
-              <span className="block text-xs opacity-75 mt-1">Ctrl+Shift+H</span>
+              📚 History (Ctrl+Shift+H)
             </button>
           </div>
         </div>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <div className="group bg-white rounded-3xl p-8 text-center shadow-xl border-3 border-yellow-200 hover:border-yellow-400 transition-all transform hover:scale-105 hover:shadow-2xl">
-            <div className="text-6xl font-black bg-gradient-to-br from-yellow-400 to-amber-500 bg-clip-text text-transparent mb-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="group bg-white rounded-3xl p-8 text-center shadow-xl border-3 border-yellow-200 hover:border-yellow-400 transition-all transform hover:scale-105 hover:-translate-y-1">
+            <div className="text-6xl font-black bg-gradient-to-br from-yellow-400 to-amber-500 bg-clip-text text-transparent mb-3">
               {notes.length}
             </div>
-            <div className="text-gray-700 font-bold text-sm uppercase tracking-wide">Total Notes</div>
+            <div className="text-gray-700 text-sm font-bold uppercase tracking-wider">Total Notes</div>
           </div>
           
-          <div className="group bg-white rounded-3xl p-8 text-center shadow-xl border-3 border-yellow-200 hover:border-yellow-400 transition-all transform hover:scale-105 hover:shadow-2xl">
-            <div className="text-6xl font-black bg-gradient-to-br from-yellow-400 to-amber-500 bg-clip-text text-transparent mb-2">
+          <div className="group bg-white rounded-3xl p-8 text-center shadow-xl border-3 border-yellow-200 hover:border-yellow-400 transition-all transform hover:scale-105 hover:-translate-y-1">
+            <div className="text-6xl font-black bg-gradient-to-br from-yellow-400 to-amber-500 bg-clip-text text-transparent mb-3">
               {notes.filter(n => n.isPinned).length}
             </div>
-            <div className="text-gray-700 font-bold text-sm uppercase tracking-wide">Pinned</div>
+            <div className="text-gray-700 text-sm font-bold uppercase tracking-wider">Pinned</div>
           </div>
           
-          <div className="group bg-white rounded-3xl p-8 text-center shadow-xl border-3 border-yellow-200 hover:border-yellow-400 transition-all transform hover:scale-105 hover:shadow-2xl">
-            <div className="text-6xl font-black bg-gradient-to-br from-yellow-400 to-amber-500 bg-clip-text text-transparent mb-2">
+          <div className="group bg-white rounded-3xl p-8 text-center shadow-xl border-3 border-yellow-200 hover:border-yellow-400 transition-all transform hover:scale-105 hover:-translate-y-1">
+            <div className="text-6xl font-black bg-gradient-to-br from-yellow-400 to-amber-500 bg-clip-text text-transparent mb-3">
               {new Set(notes.map(n => new Date(n.createdAt).toDateString())).size}
             </div>
-            <div className="text-gray-700 font-bold text-sm uppercase tracking-wide">Day Streak</div>
+            <div className="text-gray-700 text-sm font-bold uppercase tracking-wider">Day Streak</div>
           </div>
         </div>
-
-        {/* Floating Decorations */}
-        <div className="fixed top-10 left-10 text-6xl opacity-20 animate-bounce">✨</div>
-        <div className="fixed bottom-10 right-10 text-6xl opacity-20 animate-bounce" style={{ animationDelay: '0.5s' }}>💫</div>
       </div>
 
       <CaptureDialog
