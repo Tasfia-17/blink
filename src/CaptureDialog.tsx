@@ -63,10 +63,10 @@ export const CaptureDialog = ({ isOpen, onClose, onSave, initialContent = '' }: 
           className="blink-dialog"
         >
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            transition={{ duration: 0.15 }}
+            initial={{ opacity: 0, scale: 0.9, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.9, y: 20 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
             className="relative"
           >
             <textarea
@@ -74,39 +74,46 @@ export const CaptureDialog = ({ isOpen, onClose, onSave, initialContent = '' }: 
               value={content}
               onChange={(e) => setContent(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="What's on your mind? (Type / for commands)"
-              className="w-full h-64 p-6 bg-white text-gray-900 rounded-2xl resize-none focus:outline-none focus:ring-4 focus:ring-yellow-300 font-mono text-base border-2 border-yellow-400"
-              style={{ boxShadow: '0 20px 60px rgba(251, 191, 36, 0.3)' }}
+              placeholder="What's on your mind? ✨ (Type / for commands)"
+              className="w-full h-72 p-8 bg-white text-gray-900 rounded-3xl resize-none focus:outline-none focus:ring-4 focus:ring-yellow-300 font-mono text-lg border-3 border-yellow-300 shadow-2xl"
             />
 
             {showCommands && (
-              <div className="absolute top-16 left-6 bg-white rounded-xl shadow-2xl p-2 z-50 border-2 border-yellow-300">
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="absolute top-20 left-8 bg-white rounded-2xl shadow-2xl p-3 z-50 border-2 border-yellow-300"
+              >
                 {Object.keys(TEMPLATES).map((cmd) => (
                   <button
                     key={cmd}
                     onClick={() => applyTemplate(cmd as keyof typeof TEMPLATES)}
-                    className="block w-full text-left px-4 py-2 hover:bg-yellow-100 rounded-lg text-gray-900 font-medium"
+                    className="block w-full text-left px-5 py-3 hover:bg-yellow-100 rounded-xl text-gray-900 font-semibold transition-colors"
                   >
                     /{cmd}
                   </button>
                 ))}
-              </div>
+              </motion.div>
             )}
 
-            <div className="flex justify-between mt-4">
+            <div className="flex gap-4 mt-6">
               <button
                 onClick={() => handleSave(true)}
-                className="px-6 py-3 bg-gradient-to-r from-yellow-400 to-amber-500 text-gray-900 rounded-xl hover:from-yellow-500 hover:to-amber-600 transition font-semibold shadow-lg"
+                className="flex-1 px-8 py-4 bg-gradient-to-r from-yellow-400 to-amber-500 text-gray-900 rounded-2xl hover:from-yellow-500 hover:to-amber-600 transition-all font-bold shadow-xl text-lg transform hover:scale-105"
               >
                 📌 Pin
               </button>
               <button
                 onClick={() => handleSave()}
-                className="px-6 py-3 bg-white text-gray-900 rounded-xl hover:bg-yellow-50 transition font-semibold shadow-lg border-2 border-yellow-300"
+                className="flex-1 px-8 py-4 bg-white text-gray-900 rounded-2xl hover:bg-yellow-50 transition-all font-bold shadow-xl border-3 border-yellow-300 text-lg transform hover:scale-105"
               >
-                Save (Esc)
+                Save
               </button>
             </div>
+            
+            <p className="text-center text-sm text-gray-500 mt-4 font-medium">
+              Press <kbd className="px-2 py-1 bg-yellow-100 rounded">Esc</kbd> or <kbd className="px-2 py-1 bg-yellow-100 rounded">Ctrl+Enter</kbd> to save
+            </p>
           </motion.div>
         </Dialog>
       )}
