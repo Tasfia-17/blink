@@ -1,9 +1,13 @@
-/* Vibe Check Custom Styles */
+/* Modern Warm UI Styles */
+
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+}
 
 .k-dialog {
   border-radius: 1.5rem !important;
   border: none !important;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15) !important;
 }
 
 .k-drawer-container {
@@ -14,32 +18,39 @@
   font-family: inherit !important;
 }
 
-/* Smooth transitions for theme changes */
+/* Smooth transitions */
 * {
-  transition: background-color 0.7s ease, border-color 0.7s ease;
-}
-
-/* Glassmorphism effects */
-.backdrop-blur-lg {
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  transition: background-color 0.7s ease, border-color 0.7s ease, transform 0.2s ease;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 200, 200, 0.1);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(to bottom, #ff6b6b, #feca57);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(to bottom, #ff5252, #fdb44b);
+}
+
+/* Soft shadows */
+.shadow-soft {
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.1);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #ff6b6b 0%, #feca57 50%, #ff9ff3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

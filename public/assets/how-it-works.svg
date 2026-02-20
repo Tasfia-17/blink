@@ -1,0 +1,32 @@
+<svg width="700" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="700" height="300" fill="#f8fafc"/>
+  
+  <text x="350" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="middle">
+    How It Works
+  </text>
+  
+  <circle cx="100" cy="150" r="50" fill="#3b82f6" opacity="0.2"/>
+  <text x="100" y="140" font-family="Arial, sans-serif" font-size="36" text-anchor="middle">1</text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Select</text>
+  <text x="100" y="185" font-family="Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Your Vibe</text>
+  
+  <path d="M 150 150 L 200 150" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <circle cx="300" cy="150" r="50" fill="#8b5cf6" opacity="0.2"/>
+  <text x="300" y="140" font-family="Arial, sans-serif" font-size="36" text-anchor="middle">2</text>
+  <text x="300" y="170" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">UI Transforms</text>
+  <text x="300" y="185" font-family="Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Colors Change</text>
+  
+  <path d="M 350 150 L 400 150" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <circle cx="500" cy="150" r="50" fill="#ef4444" opacity="0.2"/>
+  <text x="500" y="140" font-family="Arial, sans-serif" font-size="36" text-anchor="middle">3</text>
+  <text x="500" y="170" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Get Tasks</text>
+  <text x="500" y="185" font-family="Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Matched Energy</text>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#cbd5e1"/>
+    </marker>
+  </defs>
+</svg>

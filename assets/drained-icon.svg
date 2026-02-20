@@ -1,0 +1,33 @@
+<svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="drainedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a29bfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6c5ce7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <circle cx="70" cy="70" r="60" fill="url(#drainedGrad)" opacity="0.15"/>
+  
+  <!-- Moon crescent -->
+  <g transform="translate(70, 70)">
+    <circle cx="0" cy="0" r="25" fill="url(#drainedGrad)" opacity="0.9"/>
+    <circle cx="8" cy="-3" r="22" fill="#fff5f5"/>
+    
+    <!-- Stars -->
+    <g transform="translate(-30, -20)">
+      <path d="M0 -5 L1 -1 L5 0 L1 1 L0 5 L-1 1 L-5 0 L-1 -1 Z" fill="url(#drainedGrad)" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <g transform="translate(25, -25)">
+      <path d="M0 -4 L0.8 -0.8 L4 0 L0.8 0.8 L0 4 L-0.8 0.8 L-4 0 L-0.8 -0.8 Z" fill="url(#drainedGrad)" opacity="0.6">
+        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <g transform="translate(20, 25)">
+      <path d="M0 -3 L0.6 -0.6 L3 0 L0.6 0.6 L0 3 L-0.6 0.6 L-3 0 L-0.6 -0.6 Z" fill="url(#drainedGrad)" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+</svg>

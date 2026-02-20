@@ -1,0 +1,83 @@
+<svg width="1200" height="200" viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cuteBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fef9c3;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fef9c3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cuteLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fde047;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="200" fill="url(#cuteBg)"/>
+  
+  <!-- Cute floating clouds -->
+  <ellipse cx="100" cy="30" rx="40" ry="25" fill="#ffffff" opacity="0.5"/>
+  <ellipse cx="1100" cy="170" rx="50" ry="30" fill="#ffffff" opacity="0.5"/>
+  
+  <!-- Cute logo -->
+  <g transform="translate(50, 50)">
+    <ellipse cx="50" cy="55" rx="48" ry="45" fill="url(#cuteLogoGrad)"/>
+    <rect x="20" y="25" width="60" height="70" rx="6" fill="#ffffff" stroke="#f59e0b" stroke-width="2.5"/>
+    <line x1="28" y1="40" x2="72" y2="40" stroke="#fbbf24" stroke-width="1.5" opacity="0.4"/>
+    <line x1="28" y1="52" x2="72" y2="52" stroke="#fbbf24" stroke-width="1.5" opacity="0.4"/>
+    <line x1="28" y1="64" x2="72" y2="64" stroke="#fbbf24" stroke-width="1.5" opacity="0.4"/>
+    <path d="M 52 32 L 44 50 L 50 50 L 47 65 L 58 47 L 52 47 Z" fill="#fbbf24" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="62" y="62" width="2" height="12" fill="#f59e0b" rx="1">
+      <animate attributeName="opacity" values="1;0.2;1" dur="0.9s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Cute sparkle on logo -->
+    <path d="M 85 25 L 86 28 L 89 29 L 86 30 L 85 33 L 84 30 L 81 29 L 84 28 Z" fill="#fde047">
+      <animateTransform attributeName="transform" type="rotate" from="0 85 29" to="360 85 29" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Title with cute styling -->
+  <text x="180" y="85" font-family="'Comic Sans MS', 'Segoe UI', Arial, sans-serif" font-size="52" fill="#0a0a0a" font-weight="700">Blink</text>
+  <text x="180" y="120" font-family="'Segoe UI', Arial, sans-serif" font-size="20" fill="#78716c">Capture thoughts in under 3 seconds</text>
+  
+  <!-- Cute badges with rounded style -->
+  <g transform="translate(180, 135)">
+    <rect width="80" height="26" rx="13" fill="#61dafb"/>
+    <text x="40" y="18" font-family="'Segoe UI', sans-serif" font-size="12" fill="#0a0a0a" text-anchor="middle" font-weight="600">React</text>
+    
+    <rect x="90" width="100" height="26" rx="13" fill="#3178c6"/>
+    <text x="140" y="18" font-family="'Segoe UI', sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">TypeScript</text>
+    
+    <rect x="200" width="90" height="26" rx="13" fill="#ff6358"/>
+    <text x="245" y="18" font-family="'Segoe UI', sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">Kendo UI</text>
+    
+    <rect x="300" width="90" height="26" rx="13" fill="#06b6d4"/>
+    <text x="345" y="18" font-family="'Segoe UI', sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">Tailwind</text>
+  </g>
+  
+  <!-- Cute feature box with rounded corners -->
+  <g transform="translate(850, 45)">
+    <rect width="330" height="110" rx="20" fill="#ffffff" stroke="#fbbf24" stroke-width="3"/>
+    
+    <!-- Cute icons for features -->
+    <circle cx="25" cy="30" r="5" fill="#fbbf24"/>
+    <text x="40" y="35" font-family="'Segoe UI', sans-serif" font-size="15" fill="#0a0a0a" font-weight="600">Under 3s capture</text>
+    
+    <circle cx="25" cy="60" r="5" fill="#fbbf24"/>
+    <text x="40" y="65" font-family="'Segoe UI', sans-serif" font-size="15" fill="#0a0a0a" font-weight="600">100% local storage</text>
+    
+    <circle cx="25" cy="90" r="5" fill="#fbbf24"/>
+    <text x="40" y="95" font-family="'Segoe UI', sans-serif" font-size="15" fill="#0a0a0a" font-weight="600">Keyboard-first design</text>
+    
+    <!-- Cute decorative elements -->
+    <path d="M 305 25 L 307 30 L 312 32 L 307 34 L 305 39 L 303 34 L 298 32 L 303 30 Z" fill="#fde047">
+      <animateTransform attributeName="transform" type="rotate" from="0 305 32" to="360 305 32" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Cute floating hearts -->
+  <g opacity="0.6">
+    <path d="M 750 40 Q 750 35 753 35 Q 756 35 756 40 Q 756 45 750 50 Q 744 45 744 40 Q 744 35 747 35 Q 750 35 750 40" fill="#fb923c">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
