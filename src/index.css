@@ -1,0 +1,55 @@
+@import '@progress/kendo-theme-default/dist/all.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0a0a0a;
+  color: #e5e5e5;
+}
+
+.blink-dialog .k-dialog {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  background: transparent;
+  max-width: 600px;
+  width: 90vw;
+}
+
+.blink-dialog .k-dialog-titlebar {
+  display: none;
+}
+
+.blink-dialog .k-dialog-content {
+  padding: 0;
+}
+
+.pinned-note .k-window {
+  background: rgba(255, 251, 235, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.k-drawer-container {
+  height: 100vh;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
