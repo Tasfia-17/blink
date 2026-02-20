@@ -1,0 +1,110 @@
+<svg width="900" height="500" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="500" fill="#0a0a0a"/>
+  
+  <!-- Title -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="28" fill="#fbbf24" text-anchor="middle" font-weight="bold">Blink vs Traditional Note Apps</text>
+  
+  <!-- Traditional Apps Column -->
+  <g transform="translate(50, 80)">
+    <text x="175" y="0" font-family="Arial, sans-serif" font-size="20" fill="#ef4444" text-anchor="middle" font-weight="bold">❌ Traditional Apps</text>
+    
+    <rect x="0" y="20" width="350" height="360" rx="10" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+    
+    <!-- Steps -->
+    <g transform="translate(20, 50)">
+      <circle cx="15" cy="15" r="12" fill="#ef4444"/>
+      <text x="15" y="20" font-family="monospace" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+      <text x="40" y="20" font-family="monospace" font-size="14" fill="#e5e5e5">Open app</text>
+      <text x="310" y="20" font-family="monospace" font-size="12" fill="#9ca3af" text-anchor="end">~5s</text>
+    </g>
+    
+    <g transform="translate(20, 90)">
+      <circle cx="15" cy="15" r="12" fill="#ef4444"/>
+      <text x="15" y="20" font-family="monospace" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">2</text>
+      <text x="40" y="20" font-family="monospace" font-size="14" fill="#e5e5e5">Wait for sync</text>
+      <text x="310" y="20" font-family="monospace" font-size="12" fill="#9ca3af" text-anchor="end">~3s</text>
+    </g>
+    
+    <g transform="translate(20, 130)">
+      <circle cx="15" cy="15" r="12" fill="#ef4444"/>
+      <text x="15" y="20" font-family="monospace" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">3</text>
+      <text x="40" y="20" font-family="monospace" font-size="14" fill="#e5e5e5">Navigate folders</text>
+      <text x="310" y="20" font-family="monospace" font-size="12" fill="#9ca3af" text-anchor="end">~4s</text>
+    </g>
+    
+    <g transform="translate(20, 170)">
+      <circle cx="15" cy="15" r="12" fill="#ef4444"/>
+      <text x="15" y="20" font-family="monospace" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">4</text>
+      <text x="40" y="20" font-family="monospace" font-size="14" fill="#e5e5e5">Create new note</text>
+      <text x="310" y="20" font-family="monospace" font-size="12" fill="#9ca3af" text-anchor="end">~2s</text>
+    </g>
+    
+    <g transform="translate(20, 210)">
+      <circle cx="15" cy="15" r="12" fill="#ef4444"/>
+      <text x="15" y="20" font-family="monospace" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">5</text>
+      <text x="40" y="20" font-family="monospace" font-size="14" fill="#e5e5e5">Choose template</text>
+      <text x="310" y="20" font-family="monospace" font-size="12" fill="#9ca3af" text-anchor="end">~3s</text>
+    </g>
+    
+    <g transform="translate(20, 250)">
+      <circle cx="15" cy="15" r="12" fill="#ef4444"/>
+      <text x="15" y="20" font-family="monospace" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">6</text>
+      <text x="40" y="20" font-family="monospace" font-size="14" fill="#e5e5e5">Type thought</text>
+      <text x="310" y="20" font-family="monospace" font-size="12" fill="#9ca3af" text-anchor="end">~5s</text>
+    </g>
+    
+    <g transform="translate(20, 290)">
+      <circle cx="15" cy="15" r="12" fill="#ef4444"/>
+      <text x="15" y="20" font-family="monospace" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">7</text>
+      <text x="40" y="20" font-family="monospace" font-size="14" fill="#e5e5e5">Click save button</text>
+      <text x="310" y="20" font-family="monospace" font-size="12" fill="#9ca3af" text-anchor="end">~1s</text>
+    </g>
+    
+    <!-- Total -->
+    <line x1="20" y1="330" x2="330" y2="330" stroke="#ef4444" stroke-width="2"/>
+    <text x="175" y="355" font-family="monospace" font-size="18" fill="#ef4444" text-anchor="middle" font-weight="bold">Total: ~23 seconds</text>
+  </g>
+  
+  <!-- Blink Column -->
+  <g transform="translate(500, 80)">
+    <text x="175" y="0" font-family="Arial, sans-serif" font-size="20" fill="#10b981" text-anchor="middle" font-weight="bold">✅ Blink</text>
+    
+    <rect x="0" y="20" width="350" height="360" rx="10" fill="#1f2937" stroke="#10b981" stroke-width="2"/>
+    
+    <!-- Steps -->
+    <g transform="translate(20, 50)">
+      <circle cx="15" cy="15" r="12" fill="#10b981"/>
+      <text x="15" y="20" font-family="monospace" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+      <text x="40" y="20" font-family="monospace" font-size="14" fill="#e5e5e5">Press Ctrl+Shift+B</text>
+      <text x="310" y="20" font-family="monospace" font-size="12" fill="#9ca3af" text-anchor="end">~0.5s</text>
+    </g>
+    
+    <g transform="translate(20, 90)">
+      <circle cx="15" cy="15" r="12" fill="#10b981"/>
+      <text x="15" y="20" font-family="monospace" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">2</text>
+      <text x="40" y="20" font-family="monospace" font-size="14" fill="#e5e5e5">Type thought</text>
+      <text x="310" y="20" font-family="monospace" font-size="12" fill="#9ca3af" text-anchor="end">~2s</text>
+    </g>
+    
+    <g transform="translate(20, 130)">
+      <circle cx="15" cy="15" r="12" fill="#10b981"/>
+      <text x="15" y="20" font-family="monospace" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">3</text>
+      <text x="40" y="20" font-family="monospace" font-size="14" fill="#e5e5e5">Press Escape</text>
+      <text x="310" y="20" font-family="monospace" font-size="12" fill="#9ca3af" text-anchor="end">~0.5s</text>
+    </g>
+    
+    <!-- Empty space to show simplicity -->
+    <text x="175" y="200" font-family="monospace" font-size="16" fill="#6b7280" text-anchor="middle" font-style="italic">That's it.</text>
+    <text x="175" y="230" font-family="monospace" font-size="14" fill="#6b7280" text-anchor="middle">No folders. No sync.</text>
+    <text x="175" y="250" font-family="monospace" font-size="14" fill="#6b7280" text-anchor="middle">No save button.</text>
+    <text x="175" y="270" font-family="monospace" font-size="14" fill="#6b7280" text-anchor="middle">Just capture.</text>
+    
+    <!-- Total -->
+    <line x1="20" y1="330" x2="330" y2="330" stroke="#10b981" stroke-width="2"/>
+    <text x="175" y="355" font-family="monospace" font-size="18" fill="#10b981" text-anchor="middle" font-weight="bold">Total: ~3 seconds</text>
+  </g>
+  
+  <!-- Bottom comparison -->
+  <text x="450" y="480" font-family="Arial, sans-serif" font-size="20" fill="#fbbf24" text-anchor="middle" font-weight="bold">⚡ 87% faster than traditional apps</text>
+</svg>

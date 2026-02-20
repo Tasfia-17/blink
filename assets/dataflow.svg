@@ -1,0 +1,113 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0a0a0a"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" fill="#fbbf24" text-anchor="middle" font-weight="bold">Data Flow Architecture</text>
+  
+  <!-- User Layer -->
+  <g transform="translate(350, 80)">
+    <circle cx="50" cy="50" r="40" fill="#1f2937" stroke="#f59e0b" stroke-width="3"/>
+    <text x="50" y="60" font-family="monospace" font-size="30" fill="#fbbf24" text-anchor="middle">👤</text>
+    <text x="50" y="110" font-family="monospace" font-size="14" fill="#e5e5e5" text-anchor="middle" font-weight="bold">User</text>
+  </g>
+  
+  <!-- Arrow down -->
+  <path d="M 400 180 L 400 220" stroke="#f59e0b" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="420" y="205" font-family="monospace" font-size="12" fill="#9ca3af">Ctrl+Shift+B</text>
+  
+  <!-- UI Layer -->
+  <rect x="200" y="230" width="400" height="120" rx="10" fill="#1f2937" stroke="#f59e0b" stroke-width="3"/>
+  <text x="400" y="255" font-family="monospace" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">UI Components (Kendo UI)</text>
+  
+  <g transform="translate(220, 270)">
+    <rect width="100" height="50" rx="5" fill="#374151" stroke="#fbbf24" stroke-width="2"/>
+    <text x="50" y="25" font-family="monospace" font-size="11" fill="#fbbf24" text-anchor="middle">Dialog</text>
+    <text x="50" y="40" font-family="monospace" font-size="9" fill="#9ca3af" text-anchor="middle">Capture</text>
+  </g>
+  
+  <g transform="translate(350, 270)">
+    <rect width="100" height="50" rx="5" fill="#374151" stroke="#fbbf24" stroke-width="2"/>
+    <text x="50" y="25" font-family="monospace" font-size="11" fill="#fbbf24" text-anchor="middle">Drawer</text>
+    <text x="50" y="40" font-family="monospace" font-size="9" fill="#9ca3af" text-anchor="middle">History</text>
+  </g>
+  
+  <g transform="translate(480, 270)">
+    <rect width="100" height="50" rx="5" fill="#374151" stroke="#fbbf24" stroke-width="2"/>
+    <text x="50" y="25" font-family="monospace" font-size="11" fill="#fbbf24" text-anchor="middle">Window</text>
+    <text x="50" y="40" font-family="monospace" font-size="9" fill="#9ca3af" text-anchor="middle">Pinned</text>
+  </g>
+  
+  <!-- Arrow down -->
+  <path d="M 400 360 L 400 400" stroke="#10b981" stroke-width="3" fill="none" marker-end="url(#arrowhead2)"/>
+  <text x="420" y="385" font-family="monospace" font-size="12" fill="#9ca3af">User Input</text>
+  
+  <!-- State Management Layer -->
+  <rect x="250" y="410" width="300" height="60" rx="10" fill="#1f2937" stroke="#10b981" stroke-width="3"/>
+  <text x="400" y="435" font-family="monospace" font-size="16" fill="#10b981" text-anchor="middle" font-weight="bold">State Management</text>
+  <text x="400" y="455" font-family="monospace" font-size="12" fill="#9ca3af" text-anchor="middle">React Hooks (useState, useEffect)</text>
+  
+  <!-- Bidirectional arrows -->
+  <path d="M 250 440 L 180 440 L 180 500 L 250 500" stroke="#8b5cf6" stroke-width="3" fill="none" marker-end="url(#arrowhead3)"/>
+  <path d="M 550 440 L 620 440 L 620 500 L 550 500" stroke="#8b5cf6" stroke-width="3" fill="none" marker-end="url(#arrowhead3)"/>
+  
+  <!-- Storage Layer -->
+  <rect x="250" y="510" width="300" height="60" rx="10" fill="#1f2937" stroke="#8b5cf6" stroke-width="3"/>
+  <text x="400" y="535" font-family="monospace" font-size="16" fill="#8b5cf6" text-anchor="middle" font-weight="bold">Storage Layer</text>
+  <text x="400" y="555" font-family="monospace" font-size="12" fill="#9ca3af" text-anchor="middle">LocalStorage API</text>
+  
+  <!-- Side annotations -->
+  <g transform="translate(50, 230)">
+    <text x="0" y="0" font-family="monospace" font-size="12" fill="#f59e0b" font-weight="bold">Presentation</text>
+    <text x="0" y="20" font-family="monospace" font-size="10" fill="#9ca3af">Kendo UI</text>
+    <text x="0" y="35" font-family="monospace" font-size="10" fill="#9ca3af">Components</text>
+  </g>
+  
+  <g transform="translate(50, 410)">
+    <text x="0" y="0" font-family="monospace" font-size="12" fill="#10b981" font-weight="bold">Business</text>
+    <text x="0" y="20" font-family="monospace" font-size="10" fill="#9ca3af">Logic</text>
+  </g>
+  
+  <g transform="translate(50, 510)">
+    <text x="0" y="0" font-family="monospace" font-size="12" fill="#8b5cf6" font-weight="bold">Data</text>
+    <text x="0" y="20" font-family="monospace" font-size="10" fill="#9ca3af">Persistence</text>
+  </g>
+  
+  <!-- Data flow labels -->
+  <g transform="translate(100, 300)">
+    <rect width="80" height="40" rx="5" fill="#0a0a0a" stroke="#fbbf24" stroke-width="1"/>
+    <text x="40" y="15" font-family="monospace" font-size="9" fill="#fbbf24" text-anchor="middle">CREATE</text>
+    <text x="40" y="28" font-family="monospace" font-size="9" fill="#9ca3af" text-anchor="middle">New Note</text>
+  </g>
+  
+  <g transform="translate(620, 300)">
+    <rect width="80" height="40" rx="5" fill="#0a0a0a" stroke="#fbbf24" stroke-width="1"/>
+    <text x="40" y="15" font-family="monospace" font-size="9" fill="#fbbf24" text-anchor="middle">READ</text>
+    <text x="40" y="28" font-family="monospace" font-size="9" fill="#9ca3af" text-anchor="middle">View Notes</text>
+  </g>
+  
+  <g transform="translate(100, 480)">
+    <rect width="80" height="40" rx="5" fill="#0a0a0a" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="40" y="15" font-family="monospace" font-size="9" fill="#8b5cf6" text-anchor="middle">SAVE</text>
+    <text x="40" y="28" font-family="monospace" font-size="9" fill="#9ca3af" text-anchor="middle">Persist</text>
+  </g>
+  
+  <g transform="translate(620, 480)">
+    <rect width="80" height="40" rx="5" fill="#0a0a0a" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="40" y="15" font-family="monospace" font-size="9" fill="#8b5cf6" text-anchor="middle">LOAD</text>
+    <text x="40" y="28" font-family="monospace" font-size="9" fill="#9ca3af" text-anchor="middle">Retrieve</text>
+  </g>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#10b981"/>
+    </marker>
+    <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#8b5cf6"/>
+    </marker>
+  </defs>
+</svg>

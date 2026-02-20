@@ -1,0 +1,70 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0a0a0a"/>
+  
+  <!-- Step 1: Hotkey -->
+  <g transform="translate(50, 100)">
+    <rect width="180" height="200" rx="10" fill="#1f1f1f" stroke="#f59e0b" stroke-width="2"/>
+    <text x="90" y="40" font-family="monospace" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">STEP 1</text>
+    <text x="90" y="70" font-family="monospace" font-size="14" fill="#e5e5e5" text-anchor="middle">Press Hotkey</text>
+    
+    <!-- Keyboard keys -->
+    <rect x="30" y="100" width="40" height="40" rx="5" fill="#374151" stroke="#f59e0b" stroke-width="2"/>
+    <text x="50" y="127" font-family="monospace" font-size="14" fill="#fbbf24" text-anchor="middle" font-weight="bold">⌘</text>
+    
+    <text x="90" y="127" font-family="monospace" font-size="20" fill="#9ca3af" text-anchor="middle">+</text>
+    
+    <rect x="110" y="100" width="40" height="40" rx="5" fill="#374151" stroke="#f59e0b" stroke-width="2"/>
+    <text x="130" y="127" font-family="monospace" font-size="14" fill="#fbbf24" text-anchor="middle" font-weight="bold">⇧</text>
+    
+    <text x="90" y="167" font-family="monospace" font-size="20" fill="#9ca3af" text-anchor="middle">+</text>
+    
+    <rect x="70" y="150" width="40" height="40" rx="5" fill="#374151" stroke="#f59e0b" stroke-width="2"/>
+    <text x="90" y="177" font-family="monospace" font-size="14" fill="#fbbf24" text-anchor="middle" font-weight="bold">B</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M 240 200 L 280 200" stroke="#f59e0b" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 2: Type -->
+  <g transform="translate(290, 100)">
+    <rect width="180" height="200" rx="10" fill="#1f1f1f" stroke="#f59e0b" stroke-width="2"/>
+    <text x="90" y="40" font-family="monospace" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">STEP 2</text>
+    <text x="90" y="70" font-family="monospace" font-size="14" fill="#e5e5e5" text-anchor="middle">Type Thought</text>
+    
+    <!-- Text input simulation -->
+    <rect x="20" y="90" width="140" height="80" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="30" y="115" font-family="monospace" font-size="12" fill="#0a0a0a">Fix bug in...</text>
+    <rect x="115" y="105" width="2" height="15" fill="#0a0a0a">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M 480 200 L 520 200" stroke="#f59e0b" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 3: Save -->
+  <g transform="translate(530, 100)">
+    <rect width="180" height="200" rx="10" fill="#1f1f1f" stroke="#f59e0b" stroke-width="2"/>
+    <text x="90" y="40" font-family="monospace" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">STEP 3</text>
+    <text x="90" y="70" font-family="monospace" font-size="14" fill="#e5e5e5" text-anchor="middle">Press ESC</text>
+    
+    <!-- ESC key -->
+    <rect x="60" y="100" width="60" height="40" rx="5" fill="#374151" stroke="#f59e0b" stroke-width="2"/>
+    <text x="90" y="127" font-family="monospace" font-size="14" fill="#fbbf24" text-anchor="middle" font-weight="bold">ESC</text>
+    
+    <!-- Checkmark -->
+    <circle cx="90" cy="170" r="15" fill="#10b981" stroke="#059669" stroke-width="2"/>
+    <path d="M 82 170 L 87 175 L 98 164" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Time indicator -->
+  <text x="400" y="350" font-family="monospace" font-size="24" fill="#fbbf24" text-anchor="middle" font-weight="bold">⚡ Under 3 Seconds ⚡</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#f59e0b"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#0a0a0a" stroke="#f59e0b" stroke-width="3"/>
+  
+  <!-- Lightning bolt (representing speed) -->
+  <path d="M 110 40 L 80 100 L 100 100 L 90 160 L 130 90 L 110 90 Z" 
+        fill="#fbbf24" 
+        stroke="#f59e0b" 
+        stroke-width="2"
+        stroke-linejoin="round"/>
+  
+  <!-- Blinking cursor effect -->
+  <rect x="135" y="85" width="4" height="30" fill="#fbbf24">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Text -->
+  <text x="100" y="185" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        fill="#fbbf24" text-anchor="middle">BLINK</text>
+</svg>
