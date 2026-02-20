@@ -2,17 +2,17 @@
 
 ![Blink Banner](./assets/banner.svg)
 
-<h1>⚡ Blink</h1>
+<h1>Blink</h1>
 
 <p><strong>Capture any thought in under 3 seconds</strong></p>
 
 <p>
-  <a href="#-the-problem">Problem</a> •
-  <a href="#-features">Features</a> •
-  <a href="#-quick-start">Quick Start</a> •
-  <a href="#-architecture">Architecture</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#-roadmap">Roadmap</a>
+  <a href="#the-problem">Problem</a> •
+  <a href="#the-solution">Solution</a> •
+  <a href="#features">Features</a> •
+  <a href="#quick-start">Quick Start</a> •
+  <a href="#architecture">Architecture</a> •
+  <a href="#tech-stack">Tech Stack</a>
 </p>
 
 [![React](https://img.shields.io/badge/React-19.2-61dafb?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
@@ -24,14 +24,14 @@
 
 ---
 
-## 🎯 The Problem
+## The Problem
 
 Every note-taking app wants to be your **second brain**. They demand:
-- ❌ Onboarding flows
-- ❌ Folder structures  
-- ❌ Cloud sync setup
-- ❌ Weekly subscription fees
-- ❌ Account creation
+- Onboarding flows
+- Folder structures  
+- Cloud sync setup
+- Weekly subscription fees
+- Account creation
 
 **By the time you've navigated to the right notebook, the idea is gone.**
 
@@ -39,7 +39,7 @@ The friction of "proper" note-taking kills spontaneity.
 
 ---
 
-## 💡 The Solution
+## The Solution
 
 **Blink** is a browser-based thought capture interface that prioritizes **speed over features**.
 
@@ -51,18 +51,18 @@ The friction of "proper" note-taking kills spontaneity.
 
 ### The entire interaction takes under 3 seconds:
 
-1. **Hit a global shortcut** → `Ctrl+Shift+B` (or `Cmd+Shift+B` on Mac)
-2. **Type your thought** → Cursor is already blinking, ready to go
-3. **Press Escape** → Auto-saves instantly to local storage
+1. **Hit a global shortcut** - `Ctrl+Shift+B` (or `Cmd+Shift+B` on Mac)
+2. **Type your thought** - Cursor is already blinking, ready to go
+3. **Press Escape** - Auto-saves instantly to local storage
 
-✅ No account creation  
-✅ No cloud configuration  
-✅ No formatting decisions  
-✅ No friction
+No account creation  
+No cloud configuration  
+No formatting decisions  
+No friction
 
 ---
 
-## ✨ Features
+## Features
 
 <div align="center">
 
@@ -70,13 +70,13 @@ The friction of "proper" note-taking kills spontaneity.
 
 </div>
 
-### ⚡ Instant Capture
+### Instant Capture
 - **Global keyboard shortcut** summons the capture dialog from any browser tab
-- **Auto-focused cursor** — start typing immediately
-- **No save button** — closing the dialog auto-saves your note
+- **Auto-focused cursor** - start typing immediately
+- **No save button** - closing the dialog auto-saves your note
 - **Escape key** or clicking outside dismisses and commits to storage
 
-### / Slash Commands
+### Slash Commands
 Type `/` at the start of any line to trigger templates:
 
 | Command | Result |
@@ -88,37 +88,37 @@ Type `/` at the start of any line to trigger templates:
 
 These commands reduce repetitive typing without cluttering the interface with buttons.
 
-### 📌 Pin System
+### Pin System
 - **Convert notes to floating sticky windows** that persist on screen
 - **Draggable** to any position
 - **Minimizable** to a bottom bar
 - **Always visible** while you work elsewhere
 - Replaces physical sticky notes for digital workspaces
 
-### 🔍 Persistent History
+### Persistent History
 - **All notes stored locally** in the browser
 - **Full-text search** with real-time filtering
 - **Slide-out sidebar** shows history in reverse chronological order
 - **Click any note** to reopen and edit it
 - **Delete with confirmation** to prevent accidents
 
-### 🎯 Daily Streak
+### Daily Streak
 - Subtle counter tracks **consecutive days** with at least one captured note
 - No notifications or guilt trips
 - Just a number that grows if you maintain the habit
 
-### 📅 On This Day *(Coming Soon)*
+### On This Day (Coming Soon)
 - Each morning, surfaces notes written on this calendar date in previous years
 - Passive resurfacing replaces manual archiving and review
 
-### 📦 Export *(Coming Soon)*
+### Export (Coming Soon)
 - One-click download of any note as a Markdown file
 - Bulk export your entire history as a ZIP of plain text files
 - Your data is always portable and never locked in
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 18+ and npm
@@ -127,7 +127,7 @@ These commands reduce repetitive typing without cluttering the interface with bu
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/blink.git
+git clone https://github.com/Tasfia-17/blink.git
 cd blink
 
 # Install dependencies
@@ -148,7 +148,7 @@ npm run preview
 
 ---
 
-## ⌨️ Keyboard Shortcuts
+## Keyboard Shortcuts
 
 | Shortcut | Action |
 |----------|--------|
@@ -160,7 +160,7 @@ npm run preview
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 <div align="center">
 
@@ -203,11 +203,11 @@ interface Note {
 ### State Management
 - **React Hooks** (`useState`, `useEffect`) for local component state
 - **LocalStorage** for persistence
-- **No global state library** — keeps it simple and fast
+- **No global state library** - keeps it simple and fast
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 <div align="center">
 
@@ -238,24 +238,24 @@ interface Note {
 
 ### Why Kendo UI?
 
-**Kendo UI for React** is typically deployed in enterprise dashboards and data-heavy admin panels. We wanted to prove these components could be **stripped down and recombined** into something that feels like a **native desktop utility** — fast, focused, and frictionless.
+**Kendo UI for React** is typically deployed in enterprise dashboards and data-heavy admin panels. We wanted to prove these components could be **stripped down and recombined** into something that feels like a **native desktop utility** - fast, focused, and frictionless.
 
 #### Key Benefits:
-✅ **Complex UI made simple** — Kendo handles drag, resize, overlay management  
-✅ **Accessibility built-in** — ARIA attributes and keyboard navigation  
-✅ **Rapid development** — Built in hours, not days  
-✅ **Highly customizable** — Easy to override styles while maintaining functionality  
-✅ **Production-ready** — Battle-tested in enterprise environments  
+- **Complex UI made simple** - Kendo handles drag, resize, overlay management  
+- **Accessibility built-in** - ARIA attributes and keyboard navigation  
+- **Rapid development** - Built in hours, not days  
+- **Highly customizable** - Easy to override styles while maintaining functionality  
+- **Production-ready** - Battle-tested in enterprise environments  
 
 ---
 
-## 🎨 Design Philosophy
+## Design Philosophy
 
 ### Distraction-Free Interface
-- **Dark mode by default** — easier on the eyes
-- **Warm amber accents** — inspired by physical sticky notes
-- **Generous whitespace** — centered layout, no clutter
-- **Glassmorphism effects** — subtle depth on pinned notes
+- **Dark mode by default** - easier on the eyes
+- **Warm amber accents** - inspired by physical sticky notes
+- **Generous whitespace** - centered layout, no clutter
+- **Glassmorphism effects** - subtle depth on pinned notes
 
 ### Keyboard-First Navigation
 - **Every action has a keyboard shortcut**
@@ -264,15 +264,15 @@ interface Note {
 - **Slash commands** for quick templates
 
 ### Speed Over Features
-- ❌ No user accounts
-- ❌ No sync (yet)
-- ❌ No rich text formatting
-- ❌ No categories or folders
-- ✅ **Just capture and search**
+- No user accounts
+- No sync (yet)
+- No rich text formatting
+- No categories or folders
+- **Just capture and search**
 
 ---
 
-## 🎯 Use Cases
+## Use Cases
 
 | User | Scenario |
 |------|----------|
@@ -283,9 +283,9 @@ interface Note {
 
 ---
 
-## 🚧 Roadmap
+## Roadmap
 
-### Phase 1: Core Capture ✅ (Complete)
+### Phase 1: Core Capture (Complete)
 - [x] Global hotkey capture
 - [x] Auto-save on close
 - [x] LocalStorage persistence
@@ -293,15 +293,15 @@ interface Note {
 - [x] Pin system
 - [x] History & search
 
-### Phase 2: Enhanced Features 🚧 (In Progress)
+### Phase 2: Enhanced Features (In Progress)
 - [ ] Export as Markdown files
 - [ ] "On This Day" feature
 - [ ] Capture streak notifications
 - [ ] Markdown preview mode
-- [ ] Keyboard navigation in history (↑↓ arrows)
+- [ ] Keyboard navigation in history (arrow keys)
 - [ ] Command palette (Cmd+K)
 
-### Phase 3: Expansion 🔮 (Future)
+### Phase 3: Expansion (Future)
 - [ ] Optional cloud sync (opt-in)
 - [ ] Mobile PWA version
 - [ ] Browser extension for true global capture
@@ -312,7 +312,7 @@ interface Note {
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -323,34 +323,17 @@ Contributions are welcome! Please follow these steps:
 5. Open a Pull Request
 
 ### Development Guidelines
-- Keep it **minimal** — every feature must justify its existence
-- Prioritize **speed** — no feature should slow down the core capture flow
+- Keep it **minimal** - every feature must justify its existence
+- Prioritize **speed** - no feature should slow down the core capture flow
 - Maintain **keyboard-first** navigation
-- Write **TypeScript** — no `any` types
+- Write **TypeScript** - no `any` types
 - Follow existing code style
 
 ---
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- **Inspired by [Stik](https://github.com/0xMassi/stik_app)** by 0xMassi — a beautiful desktop thought-capture app
-- **Built with [Kendo UI for React](https://www.telerik.com/kendo-react-ui)** by Progress Telerik
-- **Submitted for the Progress Telerik UI Generator Challenge**
-
----
-
-## 📧 Contact & Submission
-
-**Built for:** Progress Telerik UI Generator Challenge  
-**Contact:** alyssa.nicoll@progress.com  
-**Repository:** [GitHub](https://github.com/yourusername/blink)  
-**Live Demo:** [Coming Soon]
 
 ---
 
@@ -358,10 +341,10 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 <img src="./assets/logo.svg" width="100" alt="Blink Logo"/>
 
-### Made with ⚡ by [Your Name]
+### Blink
 
 **Capture faster. Think clearer.**
 
-[⭐ Star this repo](https://github.com/yourusername/blink) • [🐛 Report Bug](https://github.com/yourusername/blink/issues) • [💡 Request Feature](https://github.com/yourusername/blink/issues)
+[Star this repo](https://github.com/Tasfia-17/blink) • [Report Bug](https://github.com/Tasfia-17/blink/issues) • [Request Feature](https://github.com/Tasfia-17/blink/issues)
 
 </div>
