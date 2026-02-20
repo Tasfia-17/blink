@@ -1,61 +1,72 @@
 <svg width="700" height="400" viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iconGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
   <!-- Background -->
-  <rect width="700" height="400" fill="#0a0a0a"/>
+  <rect width="700" height="400" fill="#fef3c7"/>
   
   <!-- Title -->
-  <text x="350" y="40" font-family="Arial, sans-serif" font-size="24" fill="#fbbf24" text-anchor="middle" font-weight="bold">Key Features</text>
+  <text x="350" y="40" font-family="'Segoe UI', Arial, sans-serif" font-size="28" fill="#0a0a0a" text-anchor="middle" font-weight="700">Key Features</text>
   
   <!-- Feature 1: Instant Capture -->
   <g transform="translate(50, 80)">
-    <circle cx="40" cy="40" r="35" fill="#1f2937" stroke="#f59e0b" stroke-width="3"/>
-    <text x="40" y="50" font-family="monospace" font-size="30" fill="#fbbf24" text-anchor="middle">⚡</text>
-    <text x="100" y="35" font-family="monospace" font-size="16" fill="#fbbf24" font-weight="bold">Instant Capture</text>
-    <text x="100" y="55" font-family="monospace" font-size="11" fill="#9ca3af">Global hotkey opens dialog</text>
-    <text x="100" y="70" font-family="monospace" font-size="11" fill="#9ca3af">Auto-focused, ready to type</text>
+    <circle cx="40" cy="40" r="38" fill="url(#iconGrad1)" stroke="#f59e0b" stroke-width="2"/>
+    <path d="M 42 20 L 32 45 L 40 45 L 36 60 L 50 40 L 42 40 Z" fill="#ffffff" stroke="#0a0a0a" stroke-width="1.5"/>
+    <text x="100" y="35" font-family="'Segoe UI', sans-serif" font-size="18" fill="#0a0a0a" font-weight="700">Instant Capture</text>
+    <text x="100" y="55" font-family="'Segoe UI', sans-serif" font-size="13" fill="#78716c">Global hotkey opens dialog</text>
+    <text x="100" y="72" font-family="'Segoe UI', sans-serif" font-size="13" fill="#78716c">Auto-focused, ready to type</text>
   </g>
   
   <!-- Feature 2: Slash Commands -->
   <g transform="translate(400, 80)">
-    <circle cx="40" cy="40" r="35" fill="#1f2937" stroke="#f59e0b" stroke-width="3"/>
-    <text x="40" y="50" font-family="monospace" font-size="30" fill="#fbbf24" text-anchor="middle">/</text>
-    <text x="100" y="35" font-family="monospace" font-size="16" fill="#fbbf24" font-weight="bold">Slash Commands</text>
-    <text x="100" y="55" font-family="monospace" font-size="11" fill="#9ca3af">/meeting, /todo, /idea</text>
-    <text x="100" y="70" font-family="monospace" font-size="11" fill="#9ca3af">Quick templates</text>
+    <circle cx="40" cy="40" r="38" fill="url(#iconGrad1)" stroke="#f59e0b" stroke-width="2"/>
+    <text x="40" y="55" font-family="'Segoe UI', sans-serif" font-size="40" fill="#ffffff" text-anchor="middle" font-weight="700">/</text>
+    <text x="100" y="35" font-family="'Segoe UI', sans-serif" font-size="18" fill="#0a0a0a" font-weight="700">Slash Commands</text>
+    <text x="100" y="55" font-family="'Segoe UI', sans-serif" font-size="13" fill="#78716c">/meeting, /todo, /idea</text>
+    <text x="100" y="72" font-family="'Segoe UI', sans-serif" font-size="13" fill="#78716c">Quick templates</text>
   </g>
   
   <!-- Feature 3: Pin System -->
   <g transform="translate(50, 180)">
-    <circle cx="40" cy="40" r="35" fill="#1f2937" stroke="#f59e0b" stroke-width="3"/>
-    <text x="40" y="50" font-family="monospace" font-size="30" fill="#fbbf24" text-anchor="middle">📌</text>
-    <text x="100" y="35" font-family="monospace" font-size="16" fill="#fbbf24" font-weight="bold">Pin System</text>
-    <text x="100" y="55" font-family="monospace" font-size="11" fill="#9ca3af">Floating sticky notes</text>
-    <text x="100" y="70" font-family="monospace" font-size="11" fill="#9ca3af">Draggable & minimizable</text>
+    <circle cx="40" cy="40" r="38" fill="url(#iconGrad1)" stroke="#f59e0b" stroke-width="2"/>
+    <path d="M 40 25 L 40 35 M 35 30 L 45 30 M 40 35 L 40 55" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="40" cy="25" r="3" fill="#ffffff"/>
+    <text x="100" y="35" font-family="'Segoe UI', sans-serif" font-size="18" fill="#0a0a0a" font-weight="700">Pin System</text>
+    <text x="100" y="55" font-family="'Segoe UI', sans-serif" font-size="13" fill="#78716c">Floating sticky notes</text>
+    <text x="100" y="72" font-family="'Segoe UI', sans-serif" font-size="13" fill="#78716c">Draggable & minimizable</text>
   </g>
   
   <!-- Feature 4: History & Search -->
   <g transform="translate(400, 180)">
-    <circle cx="40" cy="40" r="35" fill="#1f2937" stroke="#f59e0b" stroke-width="3"/>
-    <text x="40" y="50" font-family="monospace" font-size="30" fill="#fbbf24" text-anchor="middle">🔍</text>
-    <text x="100" y="35" font-family="monospace" font-size="16" fill="#fbbf24" font-weight="bold">History & Search</text>
-    <text x="100" y="55" font-family="monospace" font-size="11" fill="#9ca3af">Real-time filtering</text>
-    <text x="100" y="70" font-family="monospace" font-size="11" fill="#9ca3af">Click to edit</text>
+    <circle cx="40" cy="40" r="38" fill="url(#iconGrad1)" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="35" cy="35" r="12" fill="none" stroke="#ffffff" stroke-width="3"/>
+    <line x1="44" y1="44" x2="52" y2="52" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <text x="100" y="35" font-family="'Segoe UI', sans-serif" font-size="18" fill="#0a0a0a" font-weight="700">History & Search</text>
+    <text x="100" y="55" font-family="'Segoe UI', sans-serif" font-size="13" fill="#78716c">Real-time filtering</text>
+    <text x="100" y="72" font-family="'Segoe UI', sans-serif" font-size="13" fill="#78716c">Click to edit</text>
   </g>
   
   <!-- Feature 5: Local Storage -->
   <g transform="translate(50, 280)">
-    <circle cx="40" cy="40" r="35" fill="#1f2937" stroke="#f59e0b" stroke-width="3"/>
-    <text x="40" y="50" font-family="monospace" font-size="30" fill="#fbbf24" text-anchor="middle">💾</text>
-    <text x="100" y="35" font-family="monospace" font-size="16" fill="#fbbf24" font-weight="bold">Local Storage</text>
-    <text x="100" y="55" font-family="monospace" font-size="11" fill="#9ca3af">No cloud, no sync</text>
-    <text x="100" y="70" font-family="monospace" font-size="11" fill="#9ca3af">Your data stays local</text>
+    <circle cx="40" cy="40" r="38" fill="url(#iconGrad1)" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="28" y="32" width="24" height="18" rx="2" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+    <rect x="32" y="28" width="16" height="4" rx="1" fill="#ffffff"/>
+    <text x="100" y="35" font-family="'Segoe UI', sans-serif" font-size="18" fill="#0a0a0a" font-weight="700">Local Storage</text>
+    <text x="100" y="55" font-family="'Segoe UI', sans-serif" font-size="13" fill="#78716c">No cloud, no sync</text>
+    <text x="100" y="72" font-family="'Segoe UI', sans-serif" font-size="13" fill="#78716c">Your data stays local</text>
   </g>
   
   <!-- Feature 6: Gamification -->
   <g transform="translate(400, 280)">
-    <circle cx="40" cy="40" r="35" fill="#1f2937" stroke="#f59e0b" stroke-width="3"/>
-    <text x="40" y="50" font-family="monospace" font-size="30" fill="#fbbf24" text-anchor="middle">🎯</text>
-    <text x="100" y="35" font-family="monospace" font-size="16" fill="#fbbf24" font-weight="bold">Gamification</text>
-    <text x="100" y="55" font-family="monospace" font-size="11" fill="#9ca3af">Track your streak</text>
-    <text x="100" y="70" font-family="monospace" font-size="11" fill="#9ca3af">Daily capture stats</text>
+    <circle cx="40" cy="40" r="38" fill="url(#iconGrad1)" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="40" cy="40" r="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+    <circle cx="40" cy="40" r="3" fill="#ffffff"/>
+    <text x="100" y="35" font-family="'Segoe UI', sans-serif" font-size="18" fill="#0a0a0a" font-weight="700">Gamification</text>
+    <text x="100" y="55" font-family="'Segoe UI', sans-serif" font-size="13" fill="#78716c">Track your streak</text>
+    <text x="100" y="72" font-family="'Segoe UI', sans-serif" font-size="13" fill="#78716c">Daily capture stats</text>
   </g>
 </svg>
