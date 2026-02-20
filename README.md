@@ -1,24 +1,14 @@
 <div align="center">
 
-![Blink Banner](./assets/banner.svg)
+![Vibe Check](./assets/header.svg)
 
-<h1>Blink</h1>
+**A mood-aware task manager that matches work to your energy level**
 
-<p><strong>Capture any thought in under 3 seconds</strong></p>
+[![React](https://img.shields.io/badge/React-19.2-61dafb?style=flat-square&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Kendo UI](https://img.shields.io/badge/Kendo_UI-14.2-ff6358?style=flat-square)](https://www.telerik.com/kendo-react-ui)
 
-<p>
-  <a href="#the-problem">Problem</a> •
-  <a href="#the-solution">Solution</a> •
-  <a href="#features">Features</a> •
-  <a href="#quick-start">Quick Start</a> •
-  <a href="#architecture">Architecture</a> •
-  <a href="#tech-stack">Tech Stack</a>
-</p>
-
-[![React](https://img.shields.io/badge/React-19.2-61dafb?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Kendo UI](https://img.shields.io/badge/Kendo_UI-14.2-ff6358?style=for-the-badge)](https://www.telerik.com/kendo-react-ui)
-[![Tailwind](https://img.shields.io/badge/Tailwind-4.2-06b6d4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[Live Demo](#) | [Report Issue](https://github.com/Tasfia-17/blink/issues)
 
 </div>
 
@@ -26,114 +16,127 @@
 
 ## The Problem
 
-Every note-taking app wants to be your **second brain**. They demand:
-- Onboarding flows
-- Folder structures  
-- Cloud sync setup
-- Weekly subscription fees
-- Account creation
+You have 47 tasks. You're exhausted at 4pm. Your task manager shows them all equally.
 
-**By the time you've navigated to the right notebook, the idea is gone.**
+**Which one should you actually do right now?**
 
-The friction of "proper" note-taking kills spontaneity.
+Traditional task managers ignore your current mental state. They treat 9am-you and 4pm-you the same, leading to decision paralysis and procrastination.
 
 ---
 
 ## The Solution
 
-**Blink** is a browser-based thought capture interface that prioritizes **speed over features**.
+**Vibe Check** asks one question: "How's your energy right now?"
 
-<div align="center">
+Then it shows you only the tasks that match your current state, while the entire UI transforms to reflect your mood.
 
-![Workflow](./assets/workflow.svg)
+![How It Works](./assets/how-it-works.svg)
 
-</div>
+### The Unique Twist
 
-### The entire interaction takes under 3 seconds:
+The UI has emotional intelligence. Select your vibe and watch:
 
-1. **Hit a global shortcut** - `Ctrl+Shift+B` (or `Cmd+Shift+B` on Mac)
-2. **Type your thought** - Cursor is already blinking, ready to go
-3. **Press Escape** - Auto-saves instantly to local storage
+- The entire color scheme transforms (red for energized, blue for calm, gray for drained, purple for focused)
+- Task list filters to match your energy level
+- Smooth gradient transitions create an empathetic experience
+- Gamification rewards you for completing tasks in matching vibes
 
-No account creation  
-No cloud configuration  
-No formatting decisions  
-No friction
+![Vibes](./assets/vibes.svg)
 
 ---
 
 ## Features
 
-<div align="center">
+### Dynamic Vibe-Based Theming
 
-![Features](./assets/features.svg)
+The entire interface adapts to your selected energy state:
 
-</div>
+- **Energized**: Fiery red/orange gradients, shows high-energy creative work
+- **Calm**: Soothing blue/cyan gradients, shows medium-effort tasks
+- **Drained**: Muted gray gradients, shows low-effort admin work
+- **Focused**: Purple/pink gradients, shows deep work requiring concentration
 
-### Instant Capture
-- **Global keyboard shortcut** summons the capture dialog from any browser tab
-- **Auto-focused cursor** - start typing immediately
-- **No save button** - closing the dialog auto-saves your note
-- **Escape key** or clicking outside dismisses and commits to storage
+### Smart Task Filtering
 
-### Slash Commands
-Type `/` at the start of any line to trigger templates:
+Tasks are categorized by energy requirement (high/medium/low). When you select a vibe, only matching tasks appear, eliminating decision fatigue.
 
-| Command | Result |
-|---------|--------|
-| `/meeting` | Structured meeting notes with date and attendees |
-| `/todo` | Checkbox list for tasks |
-| `/idea` | Auto-tagged idea note |
-| `/journal` | Daily journal entry with current date |
+### Gamification System
 
-These commands reduce repetitive typing without cluttering the interface with buttons.
+- **XP Points**: Earn 15-50 XP per completed task based on difficulty
+- **Bonus Multipliers**: Get 1.5x XP for completing tasks in matching vibes
+- **Level Progression**: Advance through levels as you build consistency
+- **Visual Feedback**: Instant notifications celebrate your progress
 
-### Pin System
-- **Convert notes to floating sticky windows** that persist on screen
-- **Draggable** to any position
-- **Minimizable** to a bottom bar
-- **Always visible** while you work elsewhere
-- Replaces physical sticky notes for digital workspaces
+### Analytics Dashboard
 
-### Persistent History
-- **All notes stored locally** in the browser
-- **Full-text search** with real-time filtering
-- **Slide-out sidebar** shows history in reverse chronological order
-- **Click any note** to reopen and edit it
-- **Delete with confirmation** to prevent accidents
+Track your productivity patterns with Kendo Charts:
 
-### Daily Streak
-- Subtle counter tracks **consecutive days** with at least one captured note
-- No notifications or guilt trips
-- Just a number that grows if you maintain the habit
+- Bar chart showing tasks completed by vibe
+- Donut chart displaying energy distribution
+- Quick stats for total completed and remaining tasks
+- Insights into your most productive energy states
 
-### On This Day (Coming Soon)
-- Each morning, surfaces notes written on this calendar date in previous years
-- Passive resurfacing replaces manual archiving and review
+### Modern Design
 
-### Export (Coming Soon)
-- One-click download of any note as a Markdown file
-- Bulk export your entire history as a ZIP of plain text files
-- Your data is always portable and never locked in
+- Glassmorphism effects with backdrop blur
+- Smooth 0.7s gradient transitions
+- Framer Motion animations
+- Fully responsive layout
+- Custom scrollbars and hover states
+
+---
+
+## Tech Stack
+
+### Built with Progress UI Generator
+
+This project was scaffolded using the **Progress UI Generator**, providing:
+
+- Initial component structure and layout
+- Kendo UI integration setup
+- Responsive grid system
+- Accessibility foundations
+
+### Kendo UI for React Components
+
+![Components](./assets/components.svg)
+
+| Component | Purpose | Why Kendo |
+|-----------|---------|-----------|
+| **Dialog** | Task creation modal | Built-in overlay management, focus trapping, accessibility |
+| **Drawer** | Analytics side panel | Smooth slide-in animations, overlay mode |
+| **Chart** | Productivity visualizations | Bar and donut charts with minimal configuration |
+| **DropDownList** | Energy/priority selectors | Better UX than native select elements |
+| **Badge** | Priority indicators | Visual hierarchy out of the box |
+| **Notification** | XP gain toasts | Non-intrusive, auto-dismiss, positioned |
+| **FloatingActionButton** | Quick task creation | Modern mobile-first pattern |
+| **Input** | Form fields | Consistent styling and validation |
+| **Button** | Actions throughout | Multiple variants for visual hierarchy |
+
+### Core Technologies
+
+- **React 19** with Hooks for state management
+- **TypeScript 5.9** for type safety
+- **Tailwind CSS 4** for utility-first styling
+- **Framer Motion** for smooth animations
+- **Vite 7** for lightning-fast builds
+- **LocalStorage** for client-side persistence
 
 ---
 
 ## Quick Start
 
 ### Prerequisites
-- Node.js 18+ and npm
+
+- Node.js 18 or higher
+- npm or yarn
 
 ### Installation
 
 ```bash
-# Clone the repository
 git clone https://github.com/Tasfia-17/blink.git
 cd blink
-
-# Install dependencies
 npm install
-
-# Start development server
 npm run dev
 ```
 
@@ -148,167 +151,132 @@ npm run preview
 
 ---
 
-## Keyboard Shortcuts
+## Project Structure
 
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+Shift+B` (or `Cmd+Shift+B`) | Open capture dialog |
-| `Ctrl+Shift+H` (or `Cmd+Shift+H`) | Toggle history sidebar |
-| `Esc` | Save and close capture |
-| `Ctrl+Enter` | Save and close capture |
-| `/` | Show slash commands menu |
+```
+src/
+├── App.tsx              # Main app with vibe selector and task grid
+├── TaskDialog.tsx       # Kendo Dialog for creating tasks
+├── AnalyticsDrawer.tsx  # Kendo Drawer with Charts
+├── types.ts             # TypeScript interfaces and vibe config
+├── App.css              # Modern styles (glassmorphism, gradients)
+└── main.tsx             # React entry point
+```
 
 ---
 
-## Architecture
-
-<div align="center">
-
-![Architecture](./assets/architecture.svg)
-
-</div>
-
-### Project Structure
-
-```
-blink/
-├── src/
-│   ├── App.tsx              # Main application component
-│   ├── CaptureDialog.tsx    # Floating capture interface (Kendo Dialog)
-│   ├── HistoryDrawer.tsx    # Sidebar with note history (Kendo Drawer)
-│   ├── PinnedNotes.tsx      # Floating pinned notes (Kendo Window)
-│   ├── storage.ts           # LocalStorage utilities
-│   ├── types.ts             # TypeScript interfaces
-│   ├── index.css            # Global styles + Tailwind
-│   └── main.tsx             # React entry point
-├── assets/                  # SVG diagrams and logos
-├── public/                  # Static assets
-└── package.json
-```
-
-### Data Model
+## Data Model
 
 ```typescript
-interface Note {
-  id: string;              // UUID
-  content: string;         // Plain text content
-  createdAt: number;       // Unix timestamp
-  updatedAt: number;       // Unix timestamp
-  tags: string[];          // Auto-extracted from #hashtags
-  isPinned: boolean;       // Pin status
-  template?: string;       // Template used (if any)
+interface Task {
+  id: string;
+  title: string;
+  description: string;
+  energyLevel: 'high' | 'medium' | 'low';
+  estimatedMinutes: number;
+  priority: 'urgent' | 'high' | 'medium' | 'low';
+  completed: boolean;
+  createdAt: number;
+  completedAt?: number;
+  completedInVibe?: Vibe;
+  tags: string[];
+}
+
+interface VibeSession {
+  vibe: Vibe;
+  timestamp: number;
+  tasksCompleted: number;
+  xpEarned: number;
 }
 ```
 
-### State Management
-- **React Hooks** (`useState`, `useEffect`) for local component state
-- **LocalStorage** for persistence
-- **No global state library** - keeps it simple and fast
-
 ---
 
-## Tech Stack
+## Why This Showcases Kendo UI
 
-<div align="center">
+### Rapid Development
 
-![Kendo Components](./assets/kendo-components.svg)
+Built in hours, not days, thanks to Progress UI Generator scaffolding and Kendo's comprehensive component library.
 
-</div>
+### Beyond Enterprise
 
-### Core Technologies
+Proves Kendo UI components work beautifully in consumer-grade applications, not just enterprise dashboards.
 
-| Technology | Purpose | Why? |
-|------------|---------|------|
-| **React 19** | UI framework | Modern, fast, component-based |
-| **TypeScript 5.9** | Type safety | Catch errors at compile time |
-| **Vite 7** | Build tool | Lightning-fast HMR and builds |
-| **Tailwind CSS 4** | Styling | Utility-first, rapid prototyping |
-| **Framer Motion** | Animations | Smooth, declarative animations |
+### Complex Made Simple
 
-### Kendo UI for React Components
+Charts, drawers, dialogs, and form controls work together seamlessly with minimal configuration.
 
-| Component | Usage | Why Kendo? |
-|-----------|-------|------------|
-| **Dialog** | Capture interface | Built-in overlay management, focus trapping, accessibility |
-| **Window** | Pinned notes | Draggable, resizable, z-index management out of the box |
-| **Drawer** | History sidebar | Smooth slide-in animations, overlay mode |
-| **Notification** | Save confirmations | Non-intrusive, auto-dismiss, positioned notifications |
-| **Input** | Search box | Accessible, consistent styling |
-| **Button** | Actions | Multiple fill modes for visual hierarchy |
+### Production Ready
 
-### Why Kendo UI?
+Built-in accessibility (ARIA attributes, keyboard navigation, screen reader support) and battle-tested reliability.
 
-**Kendo UI for React** is typically deployed in enterprise dashboards and data-heavy admin panels. We wanted to prove these components could be **stripped down and recombined** into something that feels like a **native desktop utility** - fast, focused, and frictionless.
+### Highly Customizable
 
-#### Key Benefits:
-- **Complex UI made simple** - Kendo handles drag, resize, overlay management  
-- **Accessibility built-in** - ARIA attributes and keyboard navigation  
-- **Rapid development** - Built in hours, not days  
-- **Highly customizable** - Easy to override styles while maintaining functionality  
-- **Production-ready** - Battle-tested in enterprise environments  
+Easy to override styles with Tailwind while maintaining Kendo's functionality and behavior.
 
 ---
 
 ## Design Philosophy
 
-### Distraction-Free Interface
-- **Dark mode by default** - easier on the eyes
-- **Warm amber accents** - inspired by physical sticky notes
-- **Generous whitespace** - centered layout, no clutter
-- **Glassmorphism effects** - subtle depth on pinned notes
+### Empathetic Design
 
-### Keyboard-First Navigation
-- **Every action has a keyboard shortcut**
-- **Tab navigation** throughout
-- **No mouse required** for core workflows
-- **Slash commands** for quick templates
+Acknowledges that users are humans with fluctuating energy levels, not productivity robots. The UI adapts to your state rather than forcing you to adapt to it.
 
-### Speed Over Features
-- No user accounts
-- No sync (yet)
-- No rich text formatting
-- No categories or folders
-- **Just capture and search**
+### Minimal Friction
+
+No accounts, no onboarding, no configuration. Open the app, select your vibe, and start working.
+
+### Visual Feedback
+
+Every action provides immediate, delightful feedback through animations, color changes, and notifications.
+
+### Keyboard-First
+
+All major actions accessible via keyboard shortcuts for power users.
 
 ---
 
 ## Use Cases
 
-| User | Scenario |
-|------|----------|
-| **Developers** | Capturing bug reproduction steps without switching contexts |
-| **Writers** | Saving sudden metaphors before they evaporate |
-| **Meeting Participants** | Logging decisions without opening a separate application |
-| **Anyone** | Who has ever opened Notes.app, waited for sync, created a new note, chosen a folder, and **forgotten what they wanted to write** |
+| User Type | Scenario |
+|-----------|----------|
+| **Developers** | Morning: High-energy architecture work. Afternoon: Low-energy code reviews |
+| **Designers** | Energized: Creative concepting. Drained: Asset organization |
+| **Writers** | Focused: Deep writing sessions. Calm: Editing and revisions |
+| **Managers** | High-energy: Strategic planning. Low-energy: Email responses |
+| **Anyone** | Who experiences energy fluctuations throughout the day |
 
 ---
 
 ## Roadmap
 
-### Phase 1: Core Capture (Complete)
-- [x] Global hotkey capture
-- [x] Auto-save on close
+### Phase 1: Core Features (Complete)
+
+- [x] Vibe selector with 4 energy states
+- [x] Dynamic UI theming
+- [x] Smart task filtering
+- [x] Task creation and management
+- [x] XP and leveling system
+- [x] Analytics dashboard with charts
 - [x] LocalStorage persistence
-- [x] Slash commands
-- [x] Pin system
-- [x] History & search
 
-### Phase 2: Enhanced Features (In Progress)
-- [ ] Export as Markdown files
-- [ ] "On This Day" feature
-- [ ] Capture streak notifications
-- [ ] Markdown preview mode
-- [ ] Keyboard navigation in history (arrow keys)
-- [ ] Command palette (Cmd+K)
+### Phase 2: Enhancements (Planned)
 
-### Phase 3: Expansion (Future)
-- [ ] Optional cloud sync (opt-in)
+- [ ] Keyboard shortcuts for vibe switching
+- [ ] Task templates for common workflows
+- [ ] Time tracking integration
+- [ ] Export analytics as PDF/CSV
+- [ ] Dark/light mode toggle
+- [ ] Custom vibe creation
+
+### Phase 3: Advanced (Future)
+
+- [ ] Optional cloud sync
+- [ ] Team collaboration features
 - [ ] Mobile PWA version
-- [ ] Browser extension for true global capture
-- [ ] Themes (light mode, custom colors)
-- [ ] Note categories/folders
-- [ ] Bulk operations (delete, export)
-- [ ] Collaboration features
+- [ ] Browser extension
+- [ ] AI-powered task suggestions
+- [ ] Calendar integration
 
 ---
 
@@ -323,28 +291,38 @@ Contributions are welcome! Please follow these steps:
 5. Open a Pull Request
 
 ### Development Guidelines
-- Keep it **minimal** - every feature must justify its existence
-- Prioritize **speed** - no feature should slow down the core capture flow
-- Maintain **keyboard-first** navigation
-- Write **TypeScript** - no `any` types
+
+- Maintain TypeScript strict mode
 - Follow existing code style
+- Keep components focused and minimal
+- Test across different vibes
+- Ensure accessibility standards
 
 ---
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+MIT License. See [LICENSE](LICENSE) file for details.
+
+---
+
+## Acknowledgments
+
+Built for the **Progress UI Generator Challenge**.
+
+Special thanks to:
+
+- Progress Software for Kendo UI for React
+- The React team for an amazing framework
+- Tailwind CSS for utility-first styling
+- Framer Motion for delightful animations
 
 ---
 
 <div align="center">
 
-<img src="./assets/logo.svg" width="100" alt="Blink Logo"/>
+**Built with Progress UI Generator + Kendo UI for React**
 
-### Blink
-
-**Capture faster. Think clearer.**
-
-[Star this repo](https://github.com/Tasfia-17/blink) • [Report Bug](https://github.com/Tasfia-17/blink/issues) • [Request Feature](https://github.com/Tasfia-17/blink/issues)
+[Star this repo](https://github.com/Tasfia-17/blink) if you find it useful!
 
 </div>

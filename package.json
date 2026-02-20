@@ -11,9 +11,10 @@
   },
   "dependencies": {
     "@progress/kendo-react-buttons": "^14.2.0",
+    "@progress/kendo-react-charts": "^14.2.0",
     "@progress/kendo-react-dialogs": "^14.2.0",
-    "@progress/kendo-react-editor": "^14.2.0",
-    "@progress/kendo-react-grid": "^14.2.0",
+    "@progress/kendo-react-dropdowns": "^14.2.0",
+    "@progress/kendo-react-indicators": "^14.2.0",
     "@progress/kendo-react-inputs": "^14.2.0",
     "@progress/kendo-react-layout": "^14.2.0",
     "@progress/kendo-react-notification": "^14.2.0",
@@ -22,7 +23,6 @@
     "framer-motion": "^12.34.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-hotkeys-hook": "^5.2.4",
     "uuid": "^13.0.0"
   },
   "devDependencies": {

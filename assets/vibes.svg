@@ -1,0 +1,42 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="energized" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="calm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="drained" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#475569;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="focused" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <text x="300" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="middle">
+    Dynamic Vibe-Based Theming
+  </text>
+  
+  <rect x="50" y="80" width="120" height="280" fill="url(#energized)" rx="15"/>
+  <text x="110" y="250" font-family="Arial, sans-serif" font-size="48" text-anchor="middle">🔥</text>
+  <text x="110" y="290" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Energized</text>
+  
+  <rect x="190" y="80" width="120" height="280" fill="url(#calm)" rx="15"/>
+  <text x="250" y="250" font-family="Arial, sans-serif" font-size="48" text-anchor="middle">🌊</text>
+  <text x="250" y="290" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Calm</text>
+  
+  <rect x="330" y="80" width="120" height="280" fill="url(#drained)" rx="15"/>
+  <text x="390" y="250" font-family="Arial, sans-serif" font-size="48" text-anchor="middle">😴</text>
+  <text x="390" y="290" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Drained</text>
+  
+  <rect x="470" y="80" width="120" height="280" fill="url(#focused)" rx="15"/>
+  <text x="530" y="250" font-family="Arial, sans-serif" font-size="48" text-anchor="middle">🎯</text>
+  <text x="530" y="290" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Focused</text>
+</svg>
