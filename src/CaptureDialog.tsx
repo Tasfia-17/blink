@@ -75,17 +75,17 @@ export const CaptureDialog = ({ isOpen, onClose, onSave, initialContent = '' }: 
               onChange={(e) => setContent(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="What's on your mind? (Type / for commands)"
-              className="w-full h-64 p-6 bg-amber-50 text-gray-900 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-amber-400 font-mono text-base"
-              style={{ boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)' }}
+              className="w-full h-64 p-6 bg-white text-gray-900 rounded-2xl resize-none focus:outline-none focus:ring-4 focus:ring-yellow-300 font-mono text-base border-2 border-yellow-400"
+              style={{ boxShadow: '0 20px 60px rgba(251, 191, 36, 0.3)' }}
             />
 
             {showCommands && (
-              <div className="absolute top-16 left-6 bg-white rounded-lg shadow-xl p-2 z-50">
+              <div className="absolute top-16 left-6 bg-white rounded-xl shadow-2xl p-2 z-50 border-2 border-yellow-300">
                 {Object.keys(TEMPLATES).map((cmd) => (
                   <button
                     key={cmd}
                     onClick={() => applyTemplate(cmd as keyof typeof TEMPLATES)}
-                    className="block w-full text-left px-4 py-2 hover:bg-amber-100 rounded text-gray-900"
+                    className="block w-full text-left px-4 py-2 hover:bg-yellow-100 rounded-lg text-gray-900 font-medium"
                   >
                     /{cmd}
                   </button>
@@ -96,13 +96,13 @@ export const CaptureDialog = ({ isOpen, onClose, onSave, initialContent = '' }: 
             <div className="flex justify-between mt-4">
               <button
                 onClick={() => handleSave(true)}
-                className="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 transition"
+                className="px-6 py-3 bg-gradient-to-r from-yellow-400 to-amber-500 text-gray-900 rounded-xl hover:from-yellow-500 hover:to-amber-600 transition font-semibold shadow-lg"
               >
                 📌 Pin
               </button>
               <button
                 onClick={() => handleSave()}
-                className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition"
+                className="px-6 py-3 bg-white text-gray-900 rounded-xl hover:bg-yellow-50 transition font-semibold shadow-lg border-2 border-yellow-300"
               >
                 Save (Esc)
               </button>

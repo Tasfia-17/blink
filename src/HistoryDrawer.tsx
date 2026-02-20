@@ -30,9 +30,9 @@ export const HistoryDrawer = ({ isOpen, onClose, notes, onNoteClick, onDelete, o
       onOverlayClick={onClose}
     >
       <DrawerContent>
-        <div className="h-screen bg-gray-900 text-white p-4 overflow-y-auto">
+        <div className="h-screen bg-gradient-to-b from-yellow-50 to-amber-50 text-gray-900 p-4 overflow-y-auto">
           <div className="flex justify-between items-center mb-4">
-            <h2 className="text-xl font-bold">History</h2>
+            <h2 className="text-2xl font-bold text-gray-900">History</h2>
             <Button onClick={onClose} fillMode="flat" icon="close" />
           </div>
 
@@ -43,15 +43,15 @@ export const HistoryDrawer = ({ isOpen, onClose, notes, onNoteClick, onDelete, o
             className="mb-4 w-full"
           />
 
-          <div className="space-y-2">
+          <div className="space-y-3">
             {filteredNotes.map((note) => (
               <div
                 key={note.id}
-                className="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer"
+                className="bg-white rounded-xl p-4 hover:bg-yellow-50 transition cursor-pointer border-2 border-yellow-200 shadow-md"
                 onClick={() => onNoteClick(note)}
               >
                 <div className="flex justify-between items-start mb-2">
-                  <span className="text-xs text-gray-400">
+                  <span className="text-xs text-gray-600 font-medium">
                     {format(note.createdAt, 'MMM d, yyyy h:mm a')}
                   </span>
                   <div className="flex gap-2">
@@ -60,7 +60,7 @@ export const HistoryDrawer = ({ isOpen, onClose, notes, onNoteClick, onDelete, o
                         e.stopPropagation();
                         onPin(note.id);
                       }}
-                      className="text-amber-400 hover:text-amber-300"
+                      className="text-2xl hover:scale-110 transition"
                     >
                       {note.isPinned ? '📌' : '📍'}
                     </button>
@@ -69,17 +69,17 @@ export const HistoryDrawer = ({ isOpen, onClose, notes, onNoteClick, onDelete, o
                         e.stopPropagation();
                         if (confirm('Delete this note?')) onDelete(note.id);
                       }}
-                      className="text-red-400 hover:text-red-300"
+                      className="text-2xl hover:scale-110 transition"
                     >
                       🗑️
                     </button>
                   </div>
                 </div>
-                <p className="text-sm line-clamp-3">{note.content}</p>
+                <p className="text-sm line-clamp-3 text-gray-800">{note.content}</p>
                 {note.tags.length > 0 && (
                   <div className="flex gap-1 mt-2">
                     {note.tags.map((tag) => (
-                      <span key={tag} className="text-xs bg-amber-900 text-amber-200 px-2 py-1 rounded">
+                      <span key={tag} className="text-xs bg-yellow-200 text-gray-900 px-2 py-1 rounded-full font-medium">
                         {tag}
                       </span>
                     ))}

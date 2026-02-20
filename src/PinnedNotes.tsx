@@ -48,11 +48,11 @@ export const PinnedNotes = ({ notes, onUnpin, onUpdate }: PinnedNotesProps) => {
             resizable={!minimized.has(note.id)}
             className="pinned-note"
           >
-            <div className="bg-amber-50 p-4 rounded">
+            <div className="bg-white p-4 rounded-lg">
               <div className="flex justify-between mb-2">
                 <button
                   onClick={() => toggleMinimize(note.id)}
-                  className="text-xs text-gray-600 hover:text-gray-900"
+                  className="text-xs text-gray-600 hover:text-gray-900 font-semibold"
                 >
                   {minimized.has(note.id) ? '▼' : '▲'}
                 </button>
@@ -61,7 +61,7 @@ export const PinnedNotes = ({ notes, onUnpin, onUpdate }: PinnedNotesProps) => {
                 <textarea
                   value={note.content}
                   onChange={(e) => onUpdate(note.id, e.target.value)}
-                  className="w-full h-32 bg-transparent resize-none focus:outline-none text-gray-900 text-sm"
+                  className="w-full h-32 bg-yellow-50 rounded-lg p-2 resize-none focus:outline-none focus:ring-2 focus:ring-yellow-300 text-gray-900 text-sm border border-yellow-200"
                 />
               )}
             </div>
